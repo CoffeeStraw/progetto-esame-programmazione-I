@@ -1,0 +1,20 @@
+\hypertarget{index_intro_sec}{}\section{Introduzione}\label{index_intro_sec}
+Il progetto {\bfseries Gieson\+Fault} è stato realizzato come progetto per l\textquotesingle{}esame di Programmazione I al dipartimento di Matematica e Informatica di Perugia.~\newline
+ Il progetto è stato creato con la forte attenzione alla produzione di un codice solido e tecnico. Una forte {\bfseries leggibilità del codice} e {\bfseries un\textquotesingle{}esperienza utente ottimale} sono state le priorità in fase di sviluppo.\hypertarget{index_run_sec}{}\section{Compilazione ed avvio}\label{index_run_sec}
+\hypertarget{index_compilation}{}\subsection{Compilazione\+:}\label{index_compilation}
+
+\begin{DoxyCode}
+gcc -o Output main.c gamelib.c -Wall -std=c11
+\end{DoxyCode}
+
+
+Per entrare in modalità debug, (dove in partenza si avranno 99 oggetti di ogni tipo) è possibile compilare nel seguente modo\+: 
+\begin{DoxyCode}
+gcc -D DEBUG -o Output main.c gamelib.c -Wall -std=c11
+\end{DoxyCode}
+\hypertarget{index_run}{}\subsection{Avvio\+:}\label{index_run}
+
+\begin{DoxyCode}
+./Output
+\end{DoxyCode}
+ 

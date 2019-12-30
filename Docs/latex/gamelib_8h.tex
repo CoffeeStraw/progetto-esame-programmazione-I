@@ -1,0 +1,238 @@
+\hypertarget{gamelib_8h}{}\section{gamelib.\+h File Reference}
+\label{gamelib_8h}\index{gamelib.\+h@{gamelib.\+h}}
+
+
+Header file of \hyperlink{gamelib_8c}{gamelib.\+c}.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structzone}{zone}
+\item 
+struct \hyperlink{structplayer}{player}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gamelib_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+SE}~0
+\item 
+\#define \hyperlink{gamelib_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+UE}~!(\hyperlink{gamelib_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+SE})
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structzone}{zone} \hyperlink{group__map_ga25bd5049e352284b30a6a239fa772249}{Zone}
+\item 
+typedef struct \hyperlink{structplayer}{player} \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1}{Player\+State} \{ \hyperlink{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1a11fd9ca455f92c69c084484d5cd803c2}{D\+E\+AD}, 
+\hyperlink{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1a354cb0516f4b32a00e3b85f1dcd9ebc7}{I\+N\+J\+U\+R\+ED}, 
+\hyperlink{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1a4f34c5c191d6e0d028ca831b6c0b1571}{A\+L\+I\+VE}
+ \}
+\item 
+enum \hyperlink{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5af}{Type\+Zone} \{ \newline
+\hyperlink{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa4ee84499c713a291f1748ca7207f19ca}{K\+I\+T\+C\+H\+EN}, 
+\hyperlink{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa136ae7644e540f744c2d1b0cb8cdff35}{L\+I\+V\+I\+N\+G\+\_\+\+R\+O\+OM}, 
+\hyperlink{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afaf7e84395d9ba6ed19aade35ddd242da6}{S\+H\+ED}, 
+\hyperlink{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa4bcaa53ccaacd4fb0a09eda9b8666ec8}{S\+T\+R\+E\+ET}, 
+\newline
+\hyperlink{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa5671451421d7253eb699b6523e17f3e1}{A\+L\+O\+N\+G\+\_\+\+L\+A\+KE}, 
+\hyperlink{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa3dee1f65bc1d094460a0f39cc951d071}{E\+X\+I\+T\+\_\+\+C\+A\+M\+P\+I\+NG}
+ \}
+\item 
+enum \hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}{Obj\+Type} \{ \newline
+\hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa100d93acb32d648f2e0cac144a4fea3a}{J\+U\+NK}, 
+\hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa8202e62c6291ab3b978e1b2a75173bdf}{B\+A\+N\+D\+A\+GE}, 
+\hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aabdb2fe9c9704d0af434b3c4ce9ef4fe9}{K\+N\+I\+FE}, 
+\hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa6850e530e5d11a1c1d38c4dab2418546}{G\+UN}, 
+\newline
+\hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa95016e6036c84ff4620f5899766a6564}{G\+A\+S\+O\+L\+I\+NE}, 
+\hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa2cd6079819f57080e08f332989038429}{A\+D\+R\+E\+N\+A\+L\+I\+NE}, 
+\hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aacfe24a7b308a82835c8a9a9a89bc4ca2}{N\+O\+T\+H\+I\+NG}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{gamelib_8h_ab10ce10dd022281e216ffa1fb854bceb}{new\+Game} ()
+\item 
+void \hyperlink{gamelib_8h_ab31643a884d56d21baa151f155d93b26}{load\+Game} ()
+\item 
+void \hyperlink{gamelib_8h_ae3629e6aee96848a9799d6706b42aa3d}{close\+Game} ()
+\item 
+char $\ast$ \hyperlink{group__system_ga2ec60b27c8c3eeedecc5a8f2d311d90d}{concat} (const char $\ast$, const char $\ast$)
+\item 
+int \hyperlink{group__system_ga8c7f7faf9cadfc15f2518a2508442fe1}{get\+Value} (int, int)
+\item 
+char \hyperlink{group__system_ga8e246608287303651a79bf1e940502ab}{get\+Ans} ()
+\item 
+void \hyperlink{group__system_gac403fa21ccf75b7ec08e5dbdeafbfc04}{wait\+Enter} ()
+\item 
+void \hyperlink{group__system_ga6bf4df1581f8838ed8735026ca64828b}{text\+Framed} (const char $\ast$text)
+\item 
+void \hyperlink{group__system_gaa2cdcb51e7e5ba8b7e2162e2966e39ab}{text\+Framed\+Sub} (const char $\ast$text)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{group__system_gaf046b2323d4aa2925386328d45029271}{g\+\_\+ans}
+\item 
+int \hyperlink{group__system_ga9e0d209810483b5853d1a8215eb45f03}{g\+\_\+menu}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file of \hyperlink{gamelib_8c}{gamelib.\+c}. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Strippoli 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+December, 2017 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gamelib_8h_aa93f0eb578d23995850d61f7d61c55c1}\label{gamelib_8h_aa93f0eb578d23995850d61f7d61c55c1}} 
+\index{gamelib.\+h@{gamelib.\+h}!F\+A\+L\+SE@{F\+A\+L\+SE}}
+\index{F\+A\+L\+SE@{F\+A\+L\+SE}!gamelib.\+h@{gamelib.\+h}}
+\subsubsection{\texorpdfstring{F\+A\+L\+SE}{FALSE}}
+{\footnotesize\ttfamily \#define F\+A\+L\+SE~0}
+
+\mbox{\Hypertarget{gamelib_8h_aa8cecfc5c5c054d2875c03e77b7be15d}\label{gamelib_8h_aa8cecfc5c5c054d2875c03e77b7be15d}} 
+\index{gamelib.\+h@{gamelib.\+h}!T\+R\+UE@{T\+R\+UE}}
+\index{T\+R\+UE@{T\+R\+UE}!gamelib.\+h@{gamelib.\+h}}
+\subsubsection{\texorpdfstring{T\+R\+UE}{TRUE}}
+{\footnotesize\ttfamily \#define T\+R\+UE~!(\hyperlink{gamelib_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+SE})}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1}\label{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1}} 
+\index{gamelib.\+h@{gamelib.\+h}!Player\+State@{Player\+State}}
+\index{Player\+State@{Player\+State}!gamelib.\+h@{gamelib.\+h}}
+\subsubsection{\texorpdfstring{Player\+State}{PlayerState}}
+{\footnotesize\ttfamily enum \hyperlink{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1}{Player\+State}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+E\+AD@{D\+E\+AD}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!D\+E\+AD@{D\+E\+AD}}}\mbox{\Hypertarget{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1a11fd9ca455f92c69c084484d5cd803c2}\label{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1a11fd9ca455f92c69c084484d5cd803c2}} 
+D\+E\+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+N\+J\+U\+R\+ED@{I\+N\+J\+U\+R\+ED}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!I\+N\+J\+U\+R\+ED@{I\+N\+J\+U\+R\+ED}}}\mbox{\Hypertarget{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1a354cb0516f4b32a00e3b85f1dcd9ebc7}\label{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1a354cb0516f4b32a00e3b85f1dcd9ebc7}} 
+I\+N\+J\+U\+R\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+L\+I\+VE@{A\+L\+I\+VE}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!A\+L\+I\+VE@{A\+L\+I\+VE}}}\mbox{\Hypertarget{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1a4f34c5c191d6e0d028ca831b6c0b1571}\label{gamelib_8h_a3c730f37b1b3a893159bada67637fdb1a4f34c5c191d6e0d028ca831b6c0b1571}} 
+A\+L\+I\+VE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5af}\label{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5af}} 
+\index{gamelib.\+h@{gamelib.\+h}!Type\+Zone@{Type\+Zone}}
+\index{Type\+Zone@{Type\+Zone}!gamelib.\+h@{gamelib.\+h}}
+\subsubsection{\texorpdfstring{Type\+Zone}{TypeZone}}
+{\footnotesize\ttfamily enum \hyperlink{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5af}{Type\+Zone}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K\+I\+T\+C\+H\+EN@{K\+I\+T\+C\+H\+EN}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!K\+I\+T\+C\+H\+EN@{K\+I\+T\+C\+H\+EN}}}\mbox{\Hypertarget{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa4ee84499c713a291f1748ca7207f19ca}\label{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa4ee84499c713a291f1748ca7207f19ca}} 
+K\+I\+T\+C\+H\+EN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+I\+V\+I\+N\+G\+\_\+\+R\+O\+OM@{L\+I\+V\+I\+N\+G\+\_\+\+R\+O\+OM}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!L\+I\+V\+I\+N\+G\+\_\+\+R\+O\+OM@{L\+I\+V\+I\+N\+G\+\_\+\+R\+O\+OM}}}\mbox{\Hypertarget{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa136ae7644e540f744c2d1b0cb8cdff35}\label{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa136ae7644e540f744c2d1b0cb8cdff35}} 
+L\+I\+V\+I\+N\+G\+\_\+\+R\+O\+OM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+H\+ED@{S\+H\+ED}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!S\+H\+ED@{S\+H\+ED}}}\mbox{\Hypertarget{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afaf7e84395d9ba6ed19aade35ddd242da6}\label{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afaf7e84395d9ba6ed19aade35ddd242da6}} 
+S\+H\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+R\+E\+ET@{S\+T\+R\+E\+ET}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!S\+T\+R\+E\+ET@{S\+T\+R\+E\+ET}}}\mbox{\Hypertarget{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa4bcaa53ccaacd4fb0a09eda9b8666ec8}\label{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa4bcaa53ccaacd4fb0a09eda9b8666ec8}} 
+S\+T\+R\+E\+ET&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+L\+O\+N\+G\+\_\+\+L\+A\+KE@{A\+L\+O\+N\+G\+\_\+\+L\+A\+KE}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!A\+L\+O\+N\+G\+\_\+\+L\+A\+KE@{A\+L\+O\+N\+G\+\_\+\+L\+A\+KE}}}\mbox{\Hypertarget{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa5671451421d7253eb699b6523e17f3e1}\label{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa5671451421d7253eb699b6523e17f3e1}} 
+A\+L\+O\+N\+G\+\_\+\+L\+A\+KE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+X\+I\+T\+\_\+\+C\+A\+M\+P\+I\+NG@{E\+X\+I\+T\+\_\+\+C\+A\+M\+P\+I\+NG}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!E\+X\+I\+T\+\_\+\+C\+A\+M\+P\+I\+NG@{E\+X\+I\+T\+\_\+\+C\+A\+M\+P\+I\+NG}}}\mbox{\Hypertarget{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa3dee1f65bc1d094460a0f39cc951d071}\label{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5afa3dee1f65bc1d094460a0f39cc951d071}} 
+E\+X\+I\+T\+\_\+\+C\+A\+M\+P\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}\label{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}} 
+\index{gamelib.\+h@{gamelib.\+h}!Obj\+Type@{Obj\+Type}}
+\index{Obj\+Type@{Obj\+Type}!gamelib.\+h@{gamelib.\+h}}
+\subsubsection{\texorpdfstring{Obj\+Type}{ObjType}}
+{\footnotesize\ttfamily enum \hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}{Obj\+Type}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{J\+U\+NK@{J\+U\+NK}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!J\+U\+NK@{J\+U\+NK}}}\mbox{\Hypertarget{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa100d93acb32d648f2e0cac144a4fea3a}\label{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa100d93acb32d648f2e0cac144a4fea3a}} 
+J\+U\+NK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+N\+D\+A\+GE@{B\+A\+N\+D\+A\+GE}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!B\+A\+N\+D\+A\+GE@{B\+A\+N\+D\+A\+GE}}}\mbox{\Hypertarget{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa8202e62c6291ab3b978e1b2a75173bdf}\label{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa8202e62c6291ab3b978e1b2a75173bdf}} 
+B\+A\+N\+D\+A\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K\+N\+I\+FE@{K\+N\+I\+FE}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!K\+N\+I\+FE@{K\+N\+I\+FE}}}\mbox{\Hypertarget{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aabdb2fe9c9704d0af434b3c4ce9ef4fe9}\label{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aabdb2fe9c9704d0af434b3c4ce9ef4fe9}} 
+K\+N\+I\+FE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+UN@{G\+UN}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!G\+UN@{G\+UN}}}\mbox{\Hypertarget{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa6850e530e5d11a1c1d38c4dab2418546}\label{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa6850e530e5d11a1c1d38c4dab2418546}} 
+G\+UN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+A\+S\+O\+L\+I\+NE@{G\+A\+S\+O\+L\+I\+NE}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!G\+A\+S\+O\+L\+I\+NE@{G\+A\+S\+O\+L\+I\+NE}}}\mbox{\Hypertarget{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa95016e6036c84ff4620f5899766a6564}\label{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa95016e6036c84ff4620f5899766a6564}} 
+G\+A\+S\+O\+L\+I\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+D\+R\+E\+N\+A\+L\+I\+NE@{A\+D\+R\+E\+N\+A\+L\+I\+NE}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!A\+D\+R\+E\+N\+A\+L\+I\+NE@{A\+D\+R\+E\+N\+A\+L\+I\+NE}}}\mbox{\Hypertarget{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa2cd6079819f57080e08f332989038429}\label{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aa2cd6079819f57080e08f332989038429}} 
+A\+D\+R\+E\+N\+A\+L\+I\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+T\+H\+I\+NG@{N\+O\+T\+H\+I\+NG}!gamelib.\+h@{gamelib.\+h}}\index{gamelib.\+h@{gamelib.\+h}!N\+O\+T\+H\+I\+NG@{N\+O\+T\+H\+I\+NG}}}\mbox{\Hypertarget{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aacfe24a7b308a82835c8a9a9a89bc4ca2}\label{gamelib_8h_a21ada50c882656c2a4723dde25f56d4aacfe24a7b308a82835c8a9a9a89bc4ca2}} 
+N\+O\+T\+H\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{gamelib_8h_ab10ce10dd022281e216ffa1fb854bceb}\label{gamelib_8h_ab10ce10dd022281e216ffa1fb854bceb}} 
+\index{gamelib.\+h@{gamelib.\+h}!new\+Game@{new\+Game}}
+\index{new\+Game@{new\+Game}!gamelib.\+h@{gamelib.\+h}}
+\subsubsection{\texorpdfstring{new\+Game()}{newGame()}}
+{\footnotesize\ttfamily void new\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the story of the game and let the player choose if he wants to start the creation of the map or not \begin{DoxySeeAlso}{See also}
+\hyperlink{group__map_gafdfcddc56725f04f4bfab96b3342f5ad}{create\+Map} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{gamelib_8h_ab31643a884d56d21baa151f155d93b26}\label{gamelib_8h_ab31643a884d56d21baa151f155d93b26}} 
+\index{gamelib.\+h@{gamelib.\+h}!load\+Game@{load\+Game}}
+\index{load\+Game@{load\+Game}!gamelib.\+h@{gamelib.\+h}}
+\subsubsection{\texorpdfstring{load\+Game()}{loadGame()}}
+{\footnotesize\ttfamily void load\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads the Game\+Save.\+save file, reallocates the memory for the linked list and starts a new game. It also call assign\+Position to set the pos of the players given the ID of the zone where they currently are \begin{DoxySeeAlso}{See also}
+\hyperlink{gamelib_8c_ab08acce8644f46c8ce7120e91d5f8836}{assign\+Position} 
+
+\hyperlink{group__system_ga1ad5b76589358eed58f97d25e63591ce}{set\+Values} 
+
+\hyperlink{group__game_ga96997515bdc703f69dbb3df24d8342a7}{shift\+Manager} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{gamelib_8h_ae3629e6aee96848a9799d6706b42aa3d}\label{gamelib_8h_ae3629e6aee96848a9799d6706b42aa3d}} 
+\index{gamelib.\+h@{gamelib.\+h}!close\+Game@{close\+Game}}
+\index{close\+Game@{close\+Game}!gamelib.\+h@{gamelib.\+h}}
+\subsubsection{\texorpdfstring{close\+Game()}{closeGame()}}
+{\footnotesize\ttfamily void close\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Simply closes the game by clearing the screen and printing a message. 

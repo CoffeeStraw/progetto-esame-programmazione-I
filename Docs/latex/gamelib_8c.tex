@@ -1,0 +1,236 @@
+\hypertarget{gamelib_8c}{}\section{gamelib.\+c File Reference}
+\label{gamelib_8c}\index{gamelib.\+c@{gamelib.\+c}}
+
+
+Core of the project.  
+
+
+{\ttfamily \#include \char`\"{}gamelib.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__map_ga9c08b7bd8c03fd9c8a06b299e08629d7}{M\+A\+X\+\_\+\+L\+A\+N\+DS}~7
+\item 
+\#define \hyperlink{group__game_gac25e6ef3ae2779588d3e1fbced1e8ceb}{B\+A\+C\+K\+P\+A\+C\+K\+\_\+\+S\+I\+ZE}~4
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{group__map_gafdfcddc56725f04f4bfab96b3342f5ad}{create\+Map} ()
+\item 
+static \hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}{Obj\+Type} \hyperlink{group__map_ga14c46e63cc9c0b8cbc9b48efcde61609}{random\+Object} (\hyperlink{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5af}{Type\+Zone})
+\item 
+static void \hyperlink{group__map_ga62518152079402c1d5dd4d7cb135ebb6}{add\+Zone} (\hyperlink{gamelib_8h_a8bc11a12fbea40ab4ffab0cfcfa9b5af}{Type\+Zone}, \hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}{Obj\+Type})
+\item 
+static void \hyperlink{group__map_ga9200eca02abbb391411ab23fb57cf2c1}{delete\+Last\+Zone} ()
+\item 
+static void \hyperlink{group__map_ga821f387806e6d9f8581df4d9823bb3e3}{print\+Zone} (\hyperlink{group__map_ga25bd5049e352284b30a6a239fa772249}{Zone} $\ast$, unsigned char)
+\item 
+static void \hyperlink{group__map_ga2057afa3403f93d17b2de845f095ac4f}{print\+Map} ()
+\item 
+static void \hyperlink{group__map_ga9c640fbe71cfc185d2031bfd50c3c697}{close\+Map} ()
+\item 
+static void \hyperlink{group__map_gad2a3b491f7cad674d88b575680059ad5}{delete\+Map} ()
+\item 
+static void \hyperlink{group__game_ga96997515bdc703f69dbb3df24d8342a7}{shift\+Manager} ()
+\item 
+static void \hyperlink{group__game_gaf21601075374fa679f09cafa941b41ed}{do\+Turn} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$)
+\item 
+static void \hyperlink{group__game_ga60a90b03a3bbf68f9034843d5bbb59a6}{progress\+Zone} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$)
+\item 
+static void \hyperlink{group__game_ga63c1d1fc43a8568c5509c3616fefa14f}{rummage} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_gaa6abddd4d89336e676f85cc4b5562101}{take\+Item} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_ga95540730276b746fb5fae9061b50d3ad}{heal} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_ga660302bc9e06f744f7492e364abeb37d}{use\+Adrenaline} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_gada5c5b8cf9361720770a151aacfb961f}{craft} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static \hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}{Obj\+Type} \hyperlink{group__game_gae64c2690b081867e40de1714f9fa669d}{choose\+Item} (unsigned short $\ast$)
+\item 
+static void \hyperlink{group__game_gab3355c8ac255799fc0a453b3177afdf6}{call\+Gieson} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_ga83efd39426fa23b683c9ac8edf60ac85}{victory} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_ga17a56084a7a5dd2f21a5693387271249}{game\+Over} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__system_ga1ad5b76589358eed58f97d25e63591ce}{set\+Values} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, unsigned int, unsigned int)
+\item 
+static void \hyperlink{group__system_gac42f6d85eb40dfdfadbf9933d885b4c1}{save\+Game} ()
+\item 
+static void \hyperlink{group__system_ga64ff5e40fc2d7ff1139ef10c5598f123}{delete\+Save} ()
+\item 
+\hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}{Obj\+Type} \hyperlink{gamelib_8c_a5b3f569c5027d76251a4b7c713f1cf63}{choose\+Item} (unsigned short backpack\mbox{[}6\mbox{]})
+\item 
+static void \hyperlink{gamelib_8c_ab08acce8644f46c8ce7120e91d5f8836}{assign\+Position} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$myP, unsigned char my\+\_\+cur\+\_\+zone)
+\item 
+void \hyperlink{gamelib_8c_ab31643a884d56d21baa151f155d93b26}{load\+Game} ()
+\item 
+void \hyperlink{gamelib_8c_ab10ce10dd022281e216ffa1fb854bceb}{new\+Game} ()
+\item 
+void \hyperlink{gamelib_8c_ae3629e6aee96848a9799d6706b42aa3d}{close\+Game} ()
+\item 
+void \hyperlink{group__system_ga6bf4df1581f8838ed8735026ca64828b}{text\+Framed} (const char $\ast$text)
+\item 
+void \hyperlink{group__system_gaa2cdcb51e7e5ba8b7e2162e2966e39ab}{text\+Framed\+Sub} (const char $\ast$text)
+\item 
+static void \hyperlink{gamelib_8c_a63bd60a9db23115f3c4082eed023e314}{clear\+\_\+stdin} ()
+\item 
+int \hyperlink{group__system_ga8c7f7faf9cadfc15f2518a2508442fe1}{get\+Value} (int inf\+\_\+l, int sup\+\_\+l)
+\item 
+char \hyperlink{group__system_ga8e246608287303651a79bf1e940502ab}{get\+Ans} ()
+\item 
+void \hyperlink{group__system_gac403fa21ccf75b7ec08e5dbdeafbfc04}{wait\+Enter} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{group__map_ga25bd5049e352284b30a6a239fa772249}{Zone} $\ast$ \hyperlink{group__map_ga77381c292d2d383101eda478b3147d99}{first\+\_\+zone} = N\+U\+LL
+\item 
+static \hyperlink{group__map_ga25bd5049e352284b30a6a239fa772249}{Zone} $\ast$ \hyperlink{group__map_ga74efc7d85bb74ab5ef4cde960e3c84f5}{last\+\_\+zone} = N\+U\+LL
+\item 
+static int const \hyperlink{group__map_gaf2350ea2b3737b32c80c5cc2b1e8c434}{object\+\_\+prop} \mbox{[}6\mbox{]}\mbox{[}6\mbox{]}
+\item 
+static \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} \hyperlink{group__game_gaccc5007b929ad581c10681547209a8e9}{P1}
+\item 
+static \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} \hyperlink{group__game_ga7a9af78ed6216215319101be23aa592d}{P2}
+\item 
+static unsigned int \hyperlink{group__game_gab559443974aa82448752226204355810}{gasoline\+\_\+turns} = 0
+\item 
+static unsigned int \hyperlink{group__game_ga5a8c0b139e420a30cda9ed86109502d7}{turn\+\_\+check} = 0
+\item 
+static const char $\ast$ \hyperlink{gamelib_8c_a77eafe48fe6c379f9a535d2938a99ce4}{tags\+\_\+state} \mbox{[}3\mbox{]}
+\item 
+static const char $\ast$ \hyperlink{gamelib_8c_a6d6e8ac6dd9a2be5245c3e29a46b3830}{tags\+\_\+zone} \mbox{[}6\mbox{]}
+\item 
+static const char $\ast$ \hyperlink{gamelib_8c_a744b013bf77031f8bdcc0117804e9527}{tags\+\_\+obj} \mbox{[}7\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Core of the project. 
+
+\begin{DoxyAuthor}{Author}
+Antonio Strippoli 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+December, 2017 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{gamelib_8c_a5b3f569c5027d76251a4b7c713f1cf63}\label{gamelib_8c_a5b3f569c5027d76251a4b7c713f1cf63}} 
+\index{gamelib.\+c@{gamelib.\+c}!choose\+Item@{choose\+Item}}
+\index{choose\+Item@{choose\+Item}!gamelib.\+c@{gamelib.\+c}}
+\subsubsection{\texorpdfstring{choose\+Item()}{chooseItem()}}
+{\footnotesize\ttfamily \hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}{Obj\+Type} choose\+Item (\begin{DoxyParamCaption}\item[{unsigned short}]{backpack\mbox{[}6\mbox{]} }\end{DoxyParamCaption})}
+
+This function returns the object that the player can use against Gieson, letting him choose if he has more than one object 
+\begin{DoxyParams}{Parameters}
+{\em backpack} & The backpack of the current player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object that the can player can use (returns nothing, an enum, in case of no useful object detected) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gamelib_8c_ab08acce8644f46c8ce7120e91d5f8836}\label{gamelib_8c_ab08acce8644f46c8ce7120e91d5f8836}} 
+\index{gamelib.\+c@{gamelib.\+c}!assign\+Position@{assign\+Position}}
+\index{assign\+Position@{assign\+Position}!gamelib.\+c@{gamelib.\+c}}
+\subsubsection{\texorpdfstring{assign\+Position()}{assignPosition()}}
+{\footnotesize\ttfamily static void assign\+Position (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP,  }\item[{unsigned char}]{my\+\_\+cur\+\_\+zone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Moves the player to the position of the map specified 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player of which we have to assign the position \\
+\hline
+{\em my\+\_\+cur\+\_\+zone} & A very small number representing the current position of the player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gamelib_8c_ab31643a884d56d21baa151f155d93b26}\label{gamelib_8c_ab31643a884d56d21baa151f155d93b26}} 
+\index{gamelib.\+c@{gamelib.\+c}!load\+Game@{load\+Game}}
+\index{load\+Game@{load\+Game}!gamelib.\+c@{gamelib.\+c}}
+\subsubsection{\texorpdfstring{load\+Game()}{loadGame()}}
+{\footnotesize\ttfamily void load\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads the Game\+Save.\+save file, reallocates the memory for the linked list and starts a new game. It also call assign\+Position to set the pos of the players given the ID of the zone where they currently are \begin{DoxySeeAlso}{See also}
+\hyperlink{gamelib_8c_ab08acce8644f46c8ce7120e91d5f8836}{assign\+Position} 
+
+\hyperlink{group__system_ga1ad5b76589358eed58f97d25e63591ce}{set\+Values} 
+
+\hyperlink{group__game_ga96997515bdc703f69dbb3df24d8342a7}{shift\+Manager} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{gamelib_8c_ab10ce10dd022281e216ffa1fb854bceb}\label{gamelib_8c_ab10ce10dd022281e216ffa1fb854bceb}} 
+\index{gamelib.\+c@{gamelib.\+c}!new\+Game@{new\+Game}}
+\index{new\+Game@{new\+Game}!gamelib.\+c@{gamelib.\+c}}
+\subsubsection{\texorpdfstring{new\+Game()}{newGame()}}
+{\footnotesize\ttfamily void new\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints the story of the game and let the player choose if he wants to start the creation of the map or not \begin{DoxySeeAlso}{See also}
+\hyperlink{group__map_gafdfcddc56725f04f4bfab96b3342f5ad}{create\+Map} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{gamelib_8c_ae3629e6aee96848a9799d6706b42aa3d}\label{gamelib_8c_ae3629e6aee96848a9799d6706b42aa3d}} 
+\index{gamelib.\+c@{gamelib.\+c}!close\+Game@{close\+Game}}
+\index{close\+Game@{close\+Game}!gamelib.\+c@{gamelib.\+c}}
+\subsubsection{\texorpdfstring{close\+Game()}{closeGame()}}
+{\footnotesize\ttfamily void close\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Simply closes the game by clearing the screen and printing a message. \mbox{\Hypertarget{gamelib_8c_a63bd60a9db23115f3c4082eed023e314}\label{gamelib_8c_a63bd60a9db23115f3c4082eed023e314}} 
+\index{gamelib.\+c@{gamelib.\+c}!clear\+\_\+stdin@{clear\+\_\+stdin}}
+\index{clear\+\_\+stdin@{clear\+\_\+stdin}!gamelib.\+c@{gamelib.\+c}}
+\subsubsection{\texorpdfstring{clear\+\_\+stdin()}{clear\_stdin()}}
+{\footnotesize\ttfamily static void clear\+\_\+stdin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Captures everything inside the stdin and simply delete all this things by exiting from the function 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{gamelib_8c_a77eafe48fe6c379f9a535d2938a99ce4}\label{gamelib_8c_a77eafe48fe6c379f9a535d2938a99ce4}} 
+\index{gamelib.\+c@{gamelib.\+c}!tags\+\_\+state@{tags\+\_\+state}}
+\index{tags\+\_\+state@{tags\+\_\+state}!gamelib.\+c@{gamelib.\+c}}
+\subsubsection{\texorpdfstring{tags\+\_\+state}{tags\_state}}
+{\footnotesize\ttfamily const char$\ast$ tags\+\_\+state\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \textcolor{stringliteral}{"Morto"},
+    \textcolor{stringliteral}{"Ferito"},
+    \textcolor{stringliteral}{"Vivo"}
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{gamelib_8c_a6d6e8ac6dd9a2be5245c3e29a46b3830}\label{gamelib_8c_a6d6e8ac6dd9a2be5245c3e29a46b3830}} 
+\index{gamelib.\+c@{gamelib.\+c}!tags\+\_\+zone@{tags\+\_\+zone}}
+\index{tags\+\_\+zone@{tags\+\_\+zone}!gamelib.\+c@{gamelib.\+c}}
+\subsubsection{\texorpdfstring{tags\+\_\+zone}{tags\_zone}}
+{\footnotesize\ttfamily const char$\ast$ tags\+\_\+zone\mbox{[}6\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \textcolor{stringliteral}{"Cucina"},
+    \textcolor{stringliteral}{"Soggiorno"},
+    \textcolor{stringliteral}{"Rimessa"},
+    \textcolor{stringliteral}{"Strada"},
+    \textcolor{stringliteral}{"Lungo lago"},
+    \textcolor{stringliteral}{"Uscita campeggio"}
+\}
+\end{DoxyCode}
+\mbox{\Hypertarget{gamelib_8c_a744b013bf77031f8bdcc0117804e9527}\label{gamelib_8c_a744b013bf77031f8bdcc0117804e9527}} 
+\index{gamelib.\+c@{gamelib.\+c}!tags\+\_\+obj@{tags\+\_\+obj}}
+\index{tags\+\_\+obj@{tags\+\_\+obj}!gamelib.\+c@{gamelib.\+c}}
+\subsubsection{\texorpdfstring{tags\+\_\+obj}{tags\_obj}}
+{\footnotesize\ttfamily const char$\ast$ tags\+\_\+obj\mbox{[}7\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \textcolor{stringliteral}{"Cianfrusaglia"},
+    \textcolor{stringliteral}{"Bende"},
+    \textcolor{stringliteral}{"Coltello"},
+    \textcolor{stringliteral}{"Pistola"},
+    \textcolor{stringliteral}{"Benzina"},
+    \textcolor{stringliteral}{"Adrenalina"},
+    \textcolor{stringliteral}{"Nessuno"}
+\}
+\end{DoxyCode}

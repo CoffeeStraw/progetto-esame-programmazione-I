@@ -1,0 +1,42 @@
+QUESTO FILE CONTIENE LE MODIFICHE EFFETTUATE RISPETTO ALLA TRACCIA ORIGINALE
+- Il menù iniziale viene gestito in maniera diversa, ora la struttura è:
+      - Nuova Partita
+      - Carica Partita
+      - Esci dal gioco
+  Una volta terminata la creazione della mappa si comincerà automaticamente a giocare,
+  evitando quindi il tornare al menù principale per selezionare l'opzione "Gioca".
+
+- IL menù della mappa è stato modificato, adesso è strutturato come di seguito:
+      - Aggiungi una nuova zona
+      - Rimuovi l'ultima zona
+      - Termina creazione mappa
+      - Torna al menù principale
+  Questo poiché la funzione "stampa_mappa" viene richiamata automaticamente ad ogni nuova stampa del suddetto menù
+  rendendo più semplice tenere sott'occhio le terre create all'utente.
+
+- La funzione chiudi_mappa non setta una variabile globale poiché adesso avvia direttamente
+  il gioco non permettendo quindi allo stesso modo di modificare oltre la mappa.
+  Inoltre aggiunge l'uscita del campeggio in maniera automatica, evitando quindi la superflua richiesta all'utente di inserirla.
+
+- Implementata una funzione per il salvataggio automatico, effettuato al termine di ciascun turno di ogni giocatore ed una volta al termine della creazione della mappa.
+
+- Aggiunto "unsigned char ID" a struct zone per permettere il salvataggio corretto su file permettendo quindi al momento del "Carica Partita" di riposizionare i giocatori al punto esatto dove erano.
+
+- Aggiunto un sistema di limite dell'inventario, controllabile tramite BACKPACK_SIZE.
+  Per questo motivo è stata aggiunta una variabile "int obj_count" alla struct player, tenente il conto del numero di oggetti posseduti dal giocatore.
+
+- Aggiunta una variabile "unsigned char searched" alla struct player per poter controllare facilmente l'esecuzione in uno dei turni precedenti nella stessa zona dell'azione rovista per permettere poi di prendere l'oggetto.
+
+- Aggiunta una funzione di un "crafting semi-randomico", utile al riutilizzo delle cianfrusaglie.
+
+- Modificata la funzione termina_gioco, che ora stampa solamente un saluto al giocatore.
+  Questo poiché l'eliminazione di tutte le zone della mappa viene affidata ad un'altra funzione denominata deleteMap().
+
+- Per il motivo precedente, si è reso quindi necessario suddividere il compito originario di termina_gioco per poter effettuare una pulizia della mappa
+  ogni qualvolta si ritorni al menù principale (il che può succedere anche successivamente alla vittoria/sconfitta dei giocatori).
+
+- Aggiunta una visualizzazione grafica dell'inventario e delle informazioni importanti durante il gioco.
+
+- Nel caso un giocatore provi ad effettuare un'azione che non può fare (ES: Prova ad usare delle bende ma non ne ha), Gieson non apparirà ed il giocatore potrà selezionare una nuova azione.
+
+- Aggiunta una modalità DEBUG attivabile unicamente al momento della compilazione (vedi documentazione).

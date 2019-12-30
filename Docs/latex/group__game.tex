@@ -1,0 +1,273 @@
+\hypertarget{group__game}{}\section{Game}
+\label{group__game}\index{Game@{Game}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structplayer}{player}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__game_gac25e6ef3ae2779588d3e1fbced1e8ceb}{B\+A\+C\+K\+P\+A\+C\+K\+\_\+\+S\+I\+ZE}~4
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structplayer}{player} \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{group__game_ga96997515bdc703f69dbb3df24d8342a7}{shift\+Manager} ()
+\item 
+static void \hyperlink{group__game_gaf21601075374fa679f09cafa941b41ed}{do\+Turn} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$)
+\item 
+static void \hyperlink{group__game_ga60a90b03a3bbf68f9034843d5bbb59a6}{progress\+Zone} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$)
+\item 
+static void \hyperlink{group__game_ga63c1d1fc43a8568c5509c3616fefa14f}{rummage} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_gaa6abddd4d89336e676f85cc4b5562101}{take\+Item} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_ga95540730276b746fb5fae9061b50d3ad}{heal} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_ga660302bc9e06f744f7492e364abeb37d}{use\+Adrenaline} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_gada5c5b8cf9361720770a151aacfb961f}{craft} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static \hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}{Obj\+Type} \hyperlink{group__game_gae64c2690b081867e40de1714f9fa669d}{choose\+Item} (unsigned short $\ast$)
+\item 
+static void \hyperlink{group__game_gab3355c8ac255799fc0a453b3177afdf6}{call\+Gieson} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_ga83efd39426fa23b683c9ac8edf60ac85}{victory} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\item 
+static void \hyperlink{group__game_ga17a56084a7a5dd2f21a5693387271249}{game\+Over} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, int $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} \hyperlink{group__game_gaccc5007b929ad581c10681547209a8e9}{P1}
+\item 
+static \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} \hyperlink{group__game_ga7a9af78ed6216215319101be23aa592d}{P2}
+\item 
+static unsigned int \hyperlink{group__game_gab559443974aa82448752226204355810}{gasoline\+\_\+turns} = 0
+\item 
+static unsigned int \hyperlink{group__game_ga5a8c0b139e420a30cda9ed86109502d7}{turn\+\_\+check} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+All the stuff related to the game mechanics. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__game_gac25e6ef3ae2779588d3e1fbced1e8ceb}\label{group__game_gac25e6ef3ae2779588d3e1fbced1e8ceb}} 
+\index{Game@{Game}!B\+A\+C\+K\+P\+A\+C\+K\+\_\+\+S\+I\+ZE@{B\+A\+C\+K\+P\+A\+C\+K\+\_\+\+S\+I\+ZE}}
+\index{B\+A\+C\+K\+P\+A\+C\+K\+\_\+\+S\+I\+ZE@{B\+A\+C\+K\+P\+A\+C\+K\+\_\+\+S\+I\+ZE}!Game@{Game}}
+\subsubsection{\texorpdfstring{B\+A\+C\+K\+P\+A\+C\+K\+\_\+\+S\+I\+ZE}{BACKPACK\_SIZE}}
+{\footnotesize\ttfamily \#define B\+A\+C\+K\+P\+A\+C\+K\+\_\+\+S\+I\+ZE~4}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}\label{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}} 
+\index{Game@{Game}!Player@{Player}}
+\index{Player@{Player}!Game@{Game}}
+\subsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structplayer}{player}  \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__game_ga96997515bdc703f69dbb3df24d8342a7}\label{group__game_ga96997515bdc703f69dbb3df24d8342a7}} 
+\index{Game@{Game}!shift\+Manager@{shift\+Manager}}
+\index{shift\+Manager@{shift\+Manager}!Game@{Game}}
+\subsubsection{\texorpdfstring{shift\+Manager()}{shiftManager()}}
+{\footnotesize\ttfamily static void shift\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Manages the turns of the two players, calling my\+Turn() when a player has to make some choices \begin{DoxySeeAlso}{See also}
+\hyperlink{group__game_gaf21601075374fa679f09cafa941b41ed}{do\+Turn} 
+
+\hyperlink{group__system_gac42f6d85eb40dfdfadbf9933d885b4c1}{save\+Game} 
+
+\hyperlink{group__system_ga64ff5e40fc2d7ff1139ef10c5598f123}{delete\+Save} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__game_gaf21601075374fa679f09cafa941b41ed}\label{group__game_gaf21601075374fa679f09cafa941b41ed}} 
+\index{Game@{Game}!do\+Turn@{do\+Turn}}
+\index{do\+Turn@{do\+Turn}!Game@{Game}}
+\subsubsection{\texorpdfstring{do\+Turn()}{doTurn()}}
+{\footnotesize\ttfamily void do\+Turn (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Prints some useful info for the game and manages the actions that the players can do, calling the respective functions 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player who is currently playing\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__game_ga60a90b03a3bbf68f9034843d5bbb59a6}{progress\+Zone} 
+
+\hyperlink{group__game_ga63c1d1fc43a8568c5509c3616fefa14f}{rummage} 
+
+\hyperlink{group__game_gaa6abddd4d89336e676f85cc4b5562101}{take\+Item} 
+
+\hyperlink{group__game_ga95540730276b746fb5fae9061b50d3ad}{heal} 
+
+\hyperlink{group__game_ga660302bc9e06f744f7492e364abeb37d}{use\+Adrenaline} 
+
+\hyperlink{group__game_gada5c5b8cf9361720770a151aacfb961f}{craft} 
+
+\hyperlink{group__game_gab3355c8ac255799fc0a453b3177afdf6}{call\+Gieson} 
+
+\hyperlink{group__game_ga83efd39426fa23b683c9ac8edf60ac85}{victory} 
+
+\hyperlink{group__game_ga17a56084a7a5dd2f21a5693387271249}{game\+Over} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__game_ga60a90b03a3bbf68f9034843d5bbb59a6}\label{group__game_ga60a90b03a3bbf68f9034843d5bbb59a6}} 
+\index{Game@{Game}!progress\+Zone@{progress\+Zone}}
+\index{progress\+Zone@{progress\+Zone}!Game@{Game}}
+\subsubsection{\texorpdfstring{progress\+Zone()}{progressZone()}}
+{\footnotesize\ttfamily void progress\+Zone (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the pointer {\bfseries pos} to the next zone, checking if the player reaches the E\+X\+I\+T\+\_\+\+C\+A\+M\+P\+I\+NG 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player who is currently playing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__game_ga63c1d1fc43a8568c5509c3616fefa14f}\label{group__game_ga63c1d1fc43a8568c5509c3616fefa14f}} 
+\index{Game@{Game}!rummage@{rummage}}
+\index{rummage@{rummage}!Game@{Game}}
+\subsubsection{\texorpdfstring{rummage()}{rummage()}}
+{\footnotesize\ttfamily void rummage (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP,  }\item[{int $\ast$}]{moves }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Allows the player to rummage in the zone where he currently is 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player who is currently playing \\
+\hline
+{\em moves} & Avaiable moves for the player. We take this as a parameter and use it in the function in case of bad use of this action \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__game_gaa6abddd4d89336e676f85cc4b5562101}\label{group__game_gaa6abddd4d89336e676f85cc4b5562101}} 
+\index{Game@{Game}!take\+Item@{take\+Item}}
+\index{take\+Item@{take\+Item}!Game@{Game}}
+\subsubsection{\texorpdfstring{take\+Item()}{takeItem()}}
+{\footnotesize\ttfamily void take\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP,  }\item[{int $\ast$}]{moves }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Takes the item of the zone incrementing by 1 the number of that item in the player\textquotesingle{}s bag 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player who is currently playing \\
+\hline
+{\em moves} & Moves available for the player. We take this as a parameter and use it in the function in case of bad use of this action \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__game_ga95540730276b746fb5fae9061b50d3ad}\label{group__game_ga95540730276b746fb5fae9061b50d3ad}} 
+\index{Game@{Game}!heal@{heal}}
+\index{heal@{heal}!Game@{Game}}
+\subsubsection{\texorpdfstring{heal()}{heal()}}
+{\footnotesize\ttfamily void heal (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP,  }\item[{int $\ast$}]{moves }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Alters the status of the current player if he has a bandage 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player who is currently playing \\
+\hline
+{\em moves} & Moves available for the player. We take this as a parameter and use it in the function in case of bad use of this action \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__game_ga660302bc9e06f744f7492e364abeb37d}\label{group__game_ga660302bc9e06f744f7492e364abeb37d}} 
+\index{Game@{Game}!use\+Adrenaline@{use\+Adrenaline}}
+\index{use\+Adrenaline@{use\+Adrenaline}!Game@{Game}}
+\subsubsection{\texorpdfstring{use\+Adrenaline()}{useAdrenaline()}}
+{\footnotesize\ttfamily void use\+Adrenaline (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP,  }\item[{int $\ast$}]{moves }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Modifies the param moves, letting the player choose an extra option during his turn. 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player who is currently playing \\
+\hline
+{\em moves} & Moves available for the player. We take this as a parameter and use it in the function in case of bad use of this action \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__game_gada5c5b8cf9361720770a151aacfb961f}\label{group__game_gada5c5b8cf9361720770a151aacfb961f}} 
+\index{Game@{Game}!craft@{craft}}
+\index{craft@{craft}!Game@{Game}}
+\subsubsection{\texorpdfstring{craft()}{craft()}}
+{\footnotesize\ttfamily void craft (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP,  }\item[{int $\ast$}]{moves }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A random craft system. Based on the number of junk possessed by the player, if the player is lucky this function will give him an useful object 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player who is currently playing \\
+\hline
+{\em moves} & Moves available for the player. We take this as a parameter and use it in the function in case of bad use of this action \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__game_gae64c2690b081867e40de1714f9fa669d}\label{group__game_gae64c2690b081867e40de1714f9fa669d}} 
+\index{Game@{Game}!choose\+Item@{choose\+Item}}
+\index{choose\+Item@{choose\+Item}!Game@{Game}}
+\subsubsection{\texorpdfstring{choose\+Item()}{chooseItem()}}
+{\footnotesize\ttfamily static \hyperlink{gamelib_8h_a21ada50c882656c2a4723dde25f56d4a}{Obj\+Type} choose\+Item (\begin{DoxyParamCaption}\item[{unsigned short $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__game_gab3355c8ac255799fc0a453b3177afdf6}\label{group__game_gab3355c8ac255799fc0a453b3177afdf6}} 
+\index{Game@{Game}!call\+Gieson@{call\+Gieson}}
+\index{call\+Gieson@{call\+Gieson}!Game@{Game}}
+\subsubsection{\texorpdfstring{call\+Gieson()}{callGieson()}}
+{\footnotesize\ttfamily void call\+Gieson (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP,  }\item[{int $\ast$}]{moves }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Manages the encounter of Gieson and the player 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player who is currently playing \\
+\hline
+{\em moves} & Moves available for the player. We take this as a parameter and use it in the function in case of bad use of this action \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group__game_gae64c2690b081867e40de1714f9fa669d}{choose\+Item} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__game_ga83efd39426fa23b683c9ac8edf60ac85}\label{group__game_ga83efd39426fa23b683c9ac8edf60ac85}} 
+\index{Game@{Game}!victory@{victory}}
+\index{victory@{victory}!Game@{Game}}
+\subsubsection{\texorpdfstring{victory()}{victory()}}
+{\footnotesize\ttfamily void victory (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP,  }\item[{int $\ast$}]{moves }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Prints a victory message to the current player 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player who is currently playing \\
+\hline
+{\em moves} & Moves available for the player. We take this as a parameter and use it in the function in case of bad use of this action \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__game_ga17a56084a7a5dd2f21a5693387271249}\label{group__game_ga17a56084a7a5dd2f21a5693387271249}} 
+\index{Game@{Game}!game\+Over@{game\+Over}}
+\index{game\+Over@{game\+Over}!Game@{Game}}
+\subsubsection{\texorpdfstring{game\+Over()}{gameOver()}}
+{\footnotesize\ttfamily void game\+Over (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{myP,  }\item[{int $\ast$}]{moves }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Prints a game over message to the player 
+\begin{DoxyParams}{Parameters}
+{\em myP} & The player who is currently playing \\
+\hline
+{\em moves} & Moves available for the player. We take this as a parameter and use it in the function in case of bad use of this action \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__game_gaccc5007b929ad581c10681547209a8e9}\label{group__game_gaccc5007b929ad581c10681547209a8e9}} 
+\index{Game@{Game}!P1@{P1}}
+\index{P1@{P1}!Game@{Game}}
+\subsubsection{\texorpdfstring{P1}{P1}}
+{\footnotesize\ttfamily \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} P1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__game_ga7a9af78ed6216215319101be23aa592d}\label{group__game_ga7a9af78ed6216215319101be23aa592d}} 
+\index{Game@{Game}!P2@{P2}}
+\index{P2@{P2}!Game@{Game}}
+\subsubsection{\texorpdfstring{P2}{P2}}
+{\footnotesize\ttfamily \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} P2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__game_gab559443974aa82448752226204355810}\label{group__game_gab559443974aa82448752226204355810}} 
+\index{Game@{Game}!gasoline\+\_\+turns@{gasoline\+\_\+turns}}
+\index{gasoline\+\_\+turns@{gasoline\+\_\+turns}!Game@{Game}}
+\subsubsection{\texorpdfstring{gasoline\+\_\+turns}{gasoline\_turns}}
+{\footnotesize\ttfamily unsigned int gasoline\+\_\+turns = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__game_ga5a8c0b139e420a30cda9ed86109502d7}\label{group__game_ga5a8c0b139e420a30cda9ed86109502d7}} 
+\index{Game@{Game}!turn\+\_\+check@{turn\+\_\+check}}
+\index{turn\+\_\+check@{turn\+\_\+check}!Game@{Game}}
+\subsubsection{\texorpdfstring{turn\+\_\+check}{turn\_check}}
+{\footnotesize\ttfamily unsigned int turn\+\_\+check = 0\hspace{0.3cm}{\ttfamily [static]}}
+

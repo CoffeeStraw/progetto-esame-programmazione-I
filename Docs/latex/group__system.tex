@@ -1,0 +1,140 @@
+\hypertarget{group__system}{}\section{System and Utilities}
+\label{group__system}\index{System and Utilities@{System and Utilities}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{group__system_ga1ad5b76589358eed58f97d25e63591ce}{set\+Values} (\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, \hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$, unsigned int, unsigned int)
+\item 
+static void \hyperlink{group__system_gac42f6d85eb40dfdfadbf9933d885b4c1}{save\+Game} ()
+\item 
+static void \hyperlink{group__system_ga64ff5e40fc2d7ff1139ef10c5598f123}{delete\+Save} ()
+\item 
+char $\ast$ \hyperlink{group__system_ga2ec60b27c8c3eeedecc5a8f2d311d90d}{concat} (const char $\ast$, const char $\ast$)
+\item 
+int \hyperlink{group__system_ga8c7f7faf9cadfc15f2518a2508442fe1}{get\+Value} (int, int)
+\item 
+char \hyperlink{group__system_ga8e246608287303651a79bf1e940502ab}{get\+Ans} ()
+\item 
+void \hyperlink{group__system_gac403fa21ccf75b7ec08e5dbdeafbfc04}{wait\+Enter} ()
+\item 
+void \hyperlink{group__system_ga6bf4df1581f8838ed8735026ca64828b}{text\+Framed} (const char $\ast$text)
+\item 
+void \hyperlink{group__system_gaa2cdcb51e7e5ba8b7e2162e2966e39ab}{text\+Framed\+Sub} (const char $\ast$text)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{group__system_gaf046b2323d4aa2925386328d45029271}{g\+\_\+ans}
+\item 
+int \hyperlink{group__system_ga9e0d209810483b5853d1a8215eb45f03}{g\+\_\+menu}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+All the system and utilities variables and functions. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__system_ga1ad5b76589358eed58f97d25e63591ce}\label{group__system_ga1ad5b76589358eed58f97d25e63591ce}} 
+\index{System and Utilities@{System and Utilities}!set\+Values@{set\+Values}}
+\index{set\+Values@{set\+Values}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{set\+Values()}{setValues()}}
+{\footnotesize\ttfamily void set\+Values (\begin{DoxyParamCaption}\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{t\+\_\+\+P1,  }\item[{\hyperlink{group__game_gac6f795d0d2e88ee469ddc704329e7cc3}{Player} $\ast$}]{t\+\_\+\+P2,  }\item[{unsigned int}]{t\+\_\+gasoline\+\_\+turns,  }\item[{unsigned int}]{t\+\_\+turn\+\_\+check }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the values for the game 
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+\+P1} & Pointer to first player to set \\
+\hline
+{\em t\+\_\+\+P2} & Pointer to second player to set \\
+\hline
+{\em t\+\_\+gasoline\+\_\+turns} & Obtaining an integer to set gasoline\+\_\+turns \\
+\hline
+{\em t\+\_\+turn\+\_\+check} & Obtaining an integer to set turn\+\_\+check \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__system_gac42f6d85eb40dfdfadbf9933d885b4c1}\label{group__system_gac42f6d85eb40dfdfadbf9933d885b4c1}} 
+\index{System and Utilities@{System and Utilities}!save\+Game@{save\+Game}}
+\index{save\+Game@{save\+Game}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{save\+Game()}{saveGame()}}
+{\footnotesize\ttfamily void save\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Saves the current game printing all the important variables into Game\+Save.\+save \mbox{\Hypertarget{group__system_ga64ff5e40fc2d7ff1139ef10c5598f123}\label{group__system_ga64ff5e40fc2d7ff1139ef10c5598f123}} 
+\index{System and Utilities@{System and Utilities}!delete\+Save@{delete\+Save}}
+\index{delete\+Save@{delete\+Save}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{delete\+Save()}{deleteSave()}}
+{\footnotesize\ttfamily void delete\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Simple alias to the remove function. It deletes the Game\+Save.\+save file \mbox{\Hypertarget{group__system_ga2ec60b27c8c3eeedecc5a8f2d311d90d}\label{group__system_ga2ec60b27c8c3eeedecc5a8f2d311d90d}} 
+\index{System and Utilities@{System and Utilities}!concat@{concat}}
+\index{concat@{concat}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily char$\ast$ concat (\begin{DoxyParamCaption}\item[{const char $\ast$}]{,  }\item[{const char $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__system_ga8c7f7faf9cadfc15f2518a2508442fe1}\label{group__system_ga8c7f7faf9cadfc15f2518a2508442fe1}} 
+\index{System and Utilities@{System and Utilities}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily int get\+Value (\begin{DoxyParamCaption}\item[{int}]{inf\+\_\+l,  }\item[{int}]{sup\+\_\+l }\end{DoxyParamCaption})}
+
+Utility function to check if the value taken by the user is correct or not, also checking if it is included between inf\+\_\+l and sup\+\_\+l 
+\begin{DoxyParams}{Parameters}
+{\em inf\+\_\+l} & Inferior limit \\
+\hline
+{\em sup\+\_\+l} & Superior limit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value taken by the user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__system_ga8e246608287303651a79bf1e940502ab}\label{group__system_ga8e246608287303651a79bf1e940502ab}} 
+\index{System and Utilities@{System and Utilities}!get\+Ans@{get\+Ans}}
+\index{get\+Ans@{get\+Ans}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{get\+Ans()}{getAns()}}
+{\footnotesize\ttfamily char get\+Ans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Utility function to check if the char taken by the user is correct or not \begin{DoxyReturn}{Returns}
+The char taken by the user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__system_gac403fa21ccf75b7ec08e5dbdeafbfc04}\label{group__system_gac403fa21ccf75b7ec08e5dbdeafbfc04}} 
+\index{System and Utilities@{System and Utilities}!wait\+Enter@{wait\+Enter}}
+\index{wait\+Enter@{wait\+Enter}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{wait\+Enter()}{waitEnter()}}
+{\footnotesize\ttfamily void wait\+Enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+A kind of alias for getchar. This function will be used to wait for the pressing of enter by the user \mbox{\Hypertarget{group__system_ga6bf4df1581f8838ed8735026ca64828b}\label{group__system_ga6bf4df1581f8838ed8735026ca64828b}} 
+\index{System and Utilities@{System and Utilities}!text\+Framed@{text\+Framed}}
+\index{text\+Framed@{text\+Framed}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{text\+Framed()}{textFramed()}}
+{\footnotesize\ttfamily void text\+Framed (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})}
+
+Writes a text inside a frame 
+\begin{DoxyParams}{Parameters}
+{\em text} & The text that we want to write \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__system_gaa2cdcb51e7e5ba8b7e2162e2966e39ab}\label{group__system_gaa2cdcb51e7e5ba8b7e2162e2966e39ab}} 
+\index{System and Utilities@{System and Utilities}!text\+Framed\+Sub@{text\+Framed\+Sub}}
+\index{text\+Framed\+Sub@{text\+Framed\+Sub}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{text\+Framed\+Sub()}{textFramedSub()}}
+{\footnotesize\ttfamily void text\+Framed\+Sub (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})}
+
+Writes a text inside a different frame from the one of text\+Framed. This function will be mostly used for game\textquotesingle{}s notification 
+\begin{DoxyParams}{Parameters}
+{\em text} & The text that we want to write \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__system_gaf046b2323d4aa2925386328d45029271}\label{group__system_gaf046b2323d4aa2925386328d45029271}} 
+\index{System and Utilities@{System and Utilities}!g\+\_\+ans@{g\+\_\+ans}}
+\index{g\+\_\+ans@{g\+\_\+ans}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{g\+\_\+ans}{g\_ans}}
+{\footnotesize\ttfamily char g\+\_\+ans}
+
+Global variable used to take an answer s/n from the user. \mbox{\Hypertarget{group__system_ga9e0d209810483b5853d1a8215eb45f03}\label{group__system_ga9e0d209810483b5853d1a8215eb45f03}} 
+\index{System and Utilities@{System and Utilities}!g\+\_\+menu@{g\+\_\+menu}}
+\index{g\+\_\+menu@{g\+\_\+menu}!System and Utilities@{System and Utilities}}
+\subsubsection{\texorpdfstring{g\+\_\+menu}{g\_menu}}
+{\footnotesize\ttfamily int g\+\_\+menu}
+
+Global variable used to navigate through the menues. 
